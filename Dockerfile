@@ -21,5 +21,5 @@ RUN jupyter nbextension enable --py widgetsnbextension
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 EXPOSE 9999:9999
-CMD ["jupyter", "lab", "--port", "9999"]
+CMD ["jupyter", "lab", "--port", "9999", "--ip", "0.0.0.0"]
 
